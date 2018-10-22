@@ -1,0 +1,142 @@
+*{
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+/*	font-family: 'Audiowide', cursive;*/
+	font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+}
+
+.firstrow{
+	text-align: justify;
+}
+
+
+
+.circle{
+	height: 200px;
+	width: 200px;
+	margin-left: 55vh; 	
+	background-color: #f2f2f2;
+	border-radius: 	50%
+}
+
+ul>li{
+	list-style: none;
+	text-align: justify;
+	display: inline;
+}
+
+img[alt*="icon"]{
+	width: 50px;
+	height: 50px;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+.display-4{
+	font-family: 'Rubik', sans-serif;
+	font-size: 30px;
+}
+
+
+footer{
+	padding-top: 30px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop Styles*/
+
+@media only screen and (min-width: 961px) {
+  body {
+  	background-color: #f2f2f2;
+/*  	background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+  }
+
+.email{
+	opacity: 0.3;
+	font-size: 16px;
+}
+
+.jumbotron{
+	background-image: url("../images/background.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #f2f2f2;
+	font-family: 'Contrail One', cursive;
+	height: 90vh;
+	text-align: center;
+	background-color: #D3D3D3;
+}
+
+.jumbotron1{
+	padding-right: 30vh;
+	padding-left: 30vh;
+
+}
+
+
+.fullstack{
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+
+
+.what-i-do{
+	padding-top: 10vh;
+	background-color: 	#A8A8A8;
+}
+
+
+.devskill{
+	padding-bottom: 5%;
+	padding-top: 5%;
+	text-align: justify;
+}
+
+
+footer{
+	height: 10vh;
+	background-color: grey;
+}
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: white; /* Yellow */
+  }
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: white; /* Red */
+  }
