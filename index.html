@@ -11,27 +11,30 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 		<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!--animate css-->
+	<link rel="stylesheet" href="animate.min.css">
 	<!-- Google fonts -->
 <!-- 	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">  --><!-- font used Audiowide//contrail+one-->
-	<link href="https://fonts.googleapis.com/css?family=Audiowide|Contrail+One" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rubik:700" rel="stylesheet">
-
-
+		<link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet"><!-- font used: Roboto -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans:400i,600" rel="stylesheet">
 
 	<header>
-	<nav class="navbar navbar-light bg-light">
+	<nav class="navbar">
  	 <a class="navbar-brand" href="#">
-    <img src="assets/images/logo1.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <img src="assets/images/brand.png" class="d-inline align-top" alt="brandlogo">
  	 </a>
 
- 	 <form class="form-inline my-2 my-lg-0">
- 	 	<ul class="nav justify-content-end">
+ 	 <form class="form-inline" id="nav-item">
+ 	 	<ul class="nav">
 		  <li class="nav-item">
 		    <a class="nav-link" href="#">About</a>
 		  </li>
 		  <li class="nav-item">
-		    <a class="nav-link" href="#">Project</a>
+		    <a class="nav-link" href="#skills">Skills</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#project">Project</a>
 		  </li>
 		  <li class="nav-item">
 		    <a class="nav-link" href="#">Contact</a>
@@ -42,99 +45,201 @@
 	</nav>
 	</header>
 
-	<div class="jumbotron">
-	<h1 class="display-1 fullstack">Fullstack Developer</h1>
-<!-- 	<hr class="my-3"> -->
-	<div class="circle">
-	<img src="#"alt="ProfilePicture">
-	</div>
-	<h2 class="display-4">Bonjour!</h2>
-	<div class="jumbotron1">
-	<p class="lead"> I am an Aspiring Fullstack Developer and a Part-time Geek Located at Manila, Philippines. I enjoy creating responsive website and building apps.</p>
-	</div>
+	<div class="jumbotron mb-0">
+	<h1 class="display-1 bonjour">Aloha!</h1>
+		<div class="container-fluid row">
+				
+				<div class="right col-lg-6">
+				 <div class="circle">
+				 <img src="#"alt="ProfilePicture">
+				 </div>
+				</div>
+				
 
-	</div>
+				<div class="jumbotron-p col-lg-6">
+					<p class="lead"> I am an Aspiring Fullstack Developer and a Part-time Geek Located at Manila, Philippines. I enjoy creating responsive website and building apps.</p>
 
-	<main>
-	<div class="container-fluid">
-		<div class="row"> 
-			 <div class="what-i-do col-lg-12">
-			 	<div class="container">
-				<h3 class="display-4">Skills</h2>
+
+				</div>			
+		</div> <!-- end of row -->
+
+				<div class="arrow bounce">
+  				<a class="fa fa-arrow-down fa-2x" href="#skills"></a>
+				</div>
+	</div> <!-- end of jumbotron -->
+
+	 <section id="skills">
+<!-- 	 	<div>
+		<h1 class="display-1 skills">Skills</h1>
+		<h2 class="display-4">Front-end Development</h2>
+		<ul class=front-end>	
+			<li class="front-end">HTML:</li>
+			<li>CSS:</li>
+			<li>Bootstrap:</li>
+			<li>Javascript:</li>
+		</ul>
+		</div> -->
+				<div class="container">
+				<h2 class="display-3 skills">Skills</h2>
 				<hr class="my-3">
 				<h4 class="display-5 devskill">Front-end Development</h4>
-				<ul>
-					<img src="assets/images/css3.png" alt="icon"><li>CSS</li>
-					<img src="assets/images/HTML5.png"	alt="icon"><li>HTML</li>
-					<img src="assets/images/bootstrap.png"	alt="icon"><li>Bootstrap</li>
-					<img src="assets/images/sass.png"	alt="icon"><li>Sass</li>
+				<ul class="ul-devskill">
+					<li><!-- <img src="assets/images/css3.png" alt="icon"> -->
+						CSS<span class="fa fa-star checked">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						</span><!-- </li> -->
+					<li><!-- <img src="assets/images/HTML5.png"	alt="icon"> -->
+						HTML<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked">
+						<span class="fa fa-star checked">
+						<span class="fa fa-star">
+						<span class="fa fa-star">
+						</li>
+					<li><!-- <img src="assets/images/bootstrap.png"	alt="icon"> -->
+						Bootstrap<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked">
+						<span class="fa fa-star checked">
+						<span class="fa fa-star">
+						<span class="fa fa-star">
+						</li>
 				</ul>
-				<h4 class="display-5 devskill">Programming and Algorithms</h4>
-				<ul>
-					<img src="assets/images/php.png"	alt="icon"><li>Php</li>
-					<img src="assets/images/jquery.png"	alt="icon"><li>Javascript</li>
+				<h4 class="display-5 devskill">Back-end Development</h4>
+				<ul class="ul-devskill">
+					<!-- <img src="assets/images/php.png"	alt="icon"> --><li>Php
+					<span class="fa fa-star checked">
+					<span class="fa fa-star checked">
+					<span class="fa fa-star checked">
+					<span class="fa fa-star">
+					<span class="fa fa-star">
+					</li>
+					<!-- <img src="assets/images/jquery.png"	alt="icon"> --><li>Javascript
+					<span class="fa fa-star checked">
+					<span class="fa fa-star checked">
+					<span class="fa fa-star checked">
+					<span class="fa fa-star">
+					<span class="fa fa-star">
+					</li>
+					<!-- <img src="assets/images/mysql.jpg"	alt="icon"> --><li>MySQL
+					<span class="fa fa-star checked">
+					<span class="fa fa-star checked">
+					<span class="fa fa-star checked">
+					<span class="fa fa-star">
+					<span class="fa fa-star">
+					</li>
+					<!-- <img src="assets/images/Laravel.png"	alt="icon"> --><li>Laravel
+					<span class="fa fa-star checked">
+					<span class="fa fa-star checked">
+					<span class="fa fa-star checked">
+					<span class="fa fa-star">
+					<span class="fa fa-star">
+					</li>
 				</ul>
-				<h4 class="display-5 devskill">Database</h4>	
-				<ul>
-					<img src="assets/images/mysql.jpg"	alt="icon"><li>MySQL</li>
-				</ul>
-				<h4 class="display-5 devskill">Model-view-Controller</h4>
-				<ul>
-				<img src="assets/images/Laravel.png"	alt="icon"><li>Laravel</li>
-				</ul>
-				</div>	 	
-			 </div> <!-- end of Whhat i do -->
-			<div class="capstone col-lg-12" id="capstone">
-				<h3 class="display-4">My Latest Works</h3>
-				<hr class="my-3">
-				<div class="card card1">
-				<h5 class="card-header">Capstone one</h5>
-				<img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-				  <div class="card-body">
-				    <h5 class="card-title">Website Example 1</h5>
-				    <p class="card-text">This website is handcrafted by me and the Language that I have used is HTML, CSS and a Bootstrap Framework</p>
-				    <a href="#" class="btn btn-primary">Visit Page</a>
-				  </div>
-				</div> <!-- end of card1 -->
-				<div class="card card1">
-				<h5 class="card-header">Capstone Two</h5>
-				<img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-				  <div class="card-body">
-				    <h5 class="card-title">Website Example 1</h5>
-				    <p class="card-text">This website is handcrafted by me and the Language that I have used is HTML, CSS and a Bootstrap Framework</p>
-				    <a href="#" class="btn btn-primary">Visit Page</a>
-				  </div>
-				</div> <!-- end of card2 -->
-
-				<div class="card card1">
-				<h5 class="card-header">Capstone one</h5>
-				<img class="card-img-top" src=".../100px180/?text=Image cap" alt="Card image cap">
-				  <div class="card-body">
-				    <h5 class="card-title">Website Example 1</h5>
-				    <p class="card-text">This website is handcrafted by me and the Language that I have used is HTML, CSS and a Bootstrap Framework</p>
-				    <a href="#" class="btn btn-primary">Visit Page</a>
-				  </div>
-				</div> <!-- end of card3 -->
-
-			</div> <!-- end of Capstone SEction -->
-
-
-
-		</div><!--  end of row-->
-	</div><!-- end of container -->
-
+				</div> <!-- end of container	  -->	
+	</section> <!-- end of skill section -->
+	<section id="project">
+		<div class="jumbotron2">
+			<h2 class="display-5 project">My Latest Works</h2>
+				<div class="row m-0">
+					<div class="col-sm-3 col-md-4">
+					  <div class="card">
+					    <img class="card-img-top" src="assets/images/error404.gif" width="100px" height="250px" alt="card-image">
+					      <div class="card-body">
+					        <h5 class="card-title">Capstone 1</h5>
+					        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					        <a href="#" class="btn btn-dark">Visit Me!</a>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="col-sm-3 col-md-4">
+					    <div class="card">
+					    <img class="card-img-top" src="assets/images/error404.gif" width="100px" height="250px" alt="card-image">
+					      <div class="card-body">
+					        <h5 class="card-title">Capstone 2</h5>
+					        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					        <a href="#" class="btn btn-dark">Visit Me!</a>
+					      </div>
+					    </div>
+					  </div>					  
+					  <div class="col-sm-3 col-md-4">
+					    <div class="card">
+					    <img class="card-img-top" src="assets/images/error404.gif" width="100px" height="250px" alt="card-image">
+					      <div class="card-body">
+					        <h5 class="card-title">Capstone 3</h5>
+					        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					        <a href="#" class="btn btn-dark">Visit Me!</a>
+					      </div>
+					    </div>
+					  </div>
+					</div> <!-- end of cards -->
+				</div><!--  end of jumbotron -->	
+	</section>
+	
 	<footer class="container-fluid">
-			<div class="col-lg-12">
-			<h6 class="display-5">Adrian Escoto | Fullstack Developer</h6>
-			<p>Do you have any Projects or Ideas? We should queue up a chat. I’ll buy the beer.</p>
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">My Resume</button>
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Hire Me</button>
-			<a href="https://www.github.com"><i class="fab fa-github"></a></i>
-			<a href="https://www.gmail.com"><i class="fas fa-at"></a></i>
-			<a href="https://www.facebook.com"><i class="fab fa-facebook"></a></i>
-			<a href="https://ph.linkedin.com/"><i class="fab fa-linkedin"></a></i>
-			 <!-- end of social links -->
-			</div> <!-- end of picture -->
+		<div class="row">
+		<div class="col-sm-5 col-lg-5">
+		<h2 class="display-5 contact" >Contact Me!</h2>
+			<form>
+			  <div class="form-row">
+			    <div class="form-group">
+			      <label for="inputName">Your Name</label>
+			      <input type="text" class="form-control">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputEmail">Your Email</label>
+			    <input type="email" class="form-control" id="inputEmail">
+			  </div>
+			  <div class="form-group">
+			    <label for="inputContact">Your Contact Number</label>
+			    <input type="text" class="form-control" id="inputNumber">
+			  </div>
+			  	<div class="form-group">
+			  		<label for="comment">What's up?</label><br>
+			  		<textarea class="textarea" col="1" row="1"></textarea>
+			  	</div>
+			  <button type="submit" class="btn btn-light send">Send</button>
+			</form>
+
+		</div><!--  end of 1st column -->
+			<div class="col-sm-2 col-lg-2" id="foot-nav">
+				<form class="form-block" id="nav-item">
+			 	 	<ul class="nav">
+					  <li class="nav-item foot-nav">
+					    <a class="nav-link" href="#">About</a>
+					  </li>
+					  <li class="nav-item foot-nav">
+					    <a class="nav-link" href="#skills">Skills</a>
+					  </li>
+					  <li class="nav-item foot-nav">
+					    <a class="nav-link" href="#project">Project</a>
+					  </li>
+					  <li class="nav-item foot-nav">
+					    <a class="nav-link" href="#">Contact</a>
+					  </li>
+					</ul>
+			    </form>
+			</div><!--  end of 2nd column -->
+			<div class="col-sm-5">
+				<div class="icon">
+				<i class="fab fa-github-square"></i>
+				<i class="fas fa-envelope-square"></i>
+				<i class="fab fa-linkedin"></i>
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-twitter-square"></i>
+				</div>
+
+				<address>
+					<p>#3 St. Joseph St.</p>
+					<p>Quezon City, Philippines 1100</p>
+					<p>+639165185634</p>
+					adrianescto@gmail.com
+				</address>
+				<button type="submit" class="btn btn-light send1">Check Out my CV!</button>
+			</div>
+		</div>
 	</footer>
 
 </head>
@@ -144,11 +249,28 @@
 
 
 
+<!-- word used: Do you have any Ideas orProject in mind? Hit me a
+message and I will get 
+you a coffee. -->
 
+<!-- quote used: “You can only become
+truly accomplished at
+something you love.
+Don’t make money your
+goal. Instead, pursue the
+things you love doing and
+then do them so well that
+people can’t take their 
+eyes of you”
+- Maya Angelou
+ -->
 
-
-
-
+<!-- hex used:
+blue: #00a99d
+yellow: #f7931e
+white: #f2f2f2
+grey: #333333
+ -->
 
 
 
